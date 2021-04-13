@@ -6,11 +6,9 @@
 /*   By: psergio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/12 16:37:56 by psergio-          #+#    #+#             */
-/*   Updated: 2021/04/13 13:14:20 by psergio-         ###   ########.fr       */
+/*   Updated: 2021/04/13 19:42:09 by psergio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int		ft_isspace(int c)
 {
@@ -71,7 +69,6 @@ int		ft_atoi(char *str)
 {
 	int negative_multiplier;
 
-	printf("string: %s\n", str);
 	while (*str)
 	{
 		if (!ft_isspace(*str))
