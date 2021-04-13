@@ -6,7 +6,7 @@
 /*   By: psergio- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/13 13:18:57 by psergio-          #+#    #+#             */
-/*   Updated: 2021/04/13 15:53:34 by psergio-         ###   ########.fr       */
+/*   Updated: 2021/04/13 20:29:14 by psergio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		is_base_valid(char *base)
 {
 	int		i;
 	int		size;
-	char	n;
+	int		n;
 	char	computed[128];
 
 	size = ft_strlen(base);
@@ -42,7 +42,7 @@ int		is_base_valid(char *base)
 			return (0);
 		if (n == computed[n])
 			return (0);
-		computed[base[i]] = base[i];
+		computed[(int)base[i]] = base[i];
 		i++;
 	}
 	return (1);
@@ -50,7 +50,7 @@ int		is_base_valid(char *base)
 
 void	convert(long int nbr, int base)
 {
-	char digit;
+	int	digit;
 
 	if (nbr < 0)
 	{
