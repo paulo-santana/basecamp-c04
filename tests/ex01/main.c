@@ -15,5 +15,5 @@
 int	main(void)
 {
 	char *str = "kkk \rdaora\n";
-	ft_putchar(str);
+	ft_putstr(str);
 }
