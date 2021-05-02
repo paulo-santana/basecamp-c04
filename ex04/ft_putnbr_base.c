@@ -35,6 +35,9 @@ int		is_base_valid(char *base)
 	if (size <= 1)
 		return (0);
 	i = 0;
+	while (i < 128)
+		computed[i++] = 0;
+	i = 0;
 	while (base[i])
 	{
 		n = base[i];
@@ -42,7 +45,7 @@ int		is_base_valid(char *base)
 			return (0);
 		if (n == computed[n])
 			return (0);
-		computed[(int)base[i]] = base[i];
+		computed[n] = n;
 		i++;
 	}
 	return (1);
