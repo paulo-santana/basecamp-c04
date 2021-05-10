@@ -29,7 +29,7 @@ int	convert_to_int(char *str, char *base, int negative_multiplier)
 			return (0);
 		str++;
 	}
-	return (nb);
+	return (nb * negative_multiplier);
 }
 
 /*
